@@ -1,0 +1,614 @@
+/* Reset and General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+
+
+  
+  /* Header Styles */
+  
+  header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffd700;
+  }
+  
+  /* Hero Section Styles */
+  
+  /* Advanced CSS for .hero h1 */
+
+.hero {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/christ.jpeg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+  /* Animation effect for h1 */
+  .hero h1::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #ffd700;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-out;
+  }
+  
+  .hero h1:hover::before {
+    width: 80%;
+  }
+  
+  /* Hover effect for h1 */
+  .hero h1:hover {
+    color: #ffd700;
+  }
+  
+  
+
+
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffd700;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Featured Products Styles */
+  
+  .featured-products {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .product h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .product p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .product a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product a:hover {
+    background-color: #ffd700;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .company-info, .contact-form {
+    margin-bottom: 20px;
+  }
+  
+  .company-info p {
+    margin: 5px 0;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+    color: #2d75c7;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    min-height: 50px;
+  }
+  
+  .contact-form button {
+    background-color: #2d75c7;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: black;
+    color: #fff;
+  }
+
+  /* Include the same CSS content as in the previous examples */
+
+/* Call-to-Action Styles */
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #2d75c7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffd700;
+  }
+  
+  /* Featured Products Styles */
+  
+  .featured-products {
+    text-align: center;
+    padding: 80px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .product {
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: black;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .product h3 {
+    margin: 10px 0;
+  }
+  
+  .product p {
+    margin-bottom: 20px;
+    color: #ddd;
+
+  }
+  
+  .product a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2d75c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product a:hover {
+    background-color: #ffd700;
+  }
+  
+  
+
+
+  /* Include the same CSS content as in the previous examples */
+
+/* Product Page Styles */
+
+.product-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .product-info {
+    max-width: 400px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input {
+    width: 50px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-info p {
+    margin-bottom: 15px;
+  }
+  
+  .add-to-cart {
+    background-color: #ffd700;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+
+
+
+  /* Include the same CSS content as in the previous examples */
+
+/* Advanced Contact Page Styles */
+
+/* Include the same CSS content as in the previous examples */
+
+/* Homepage Styles */
+
+.contact-form-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: black;
+    background-image: url('images/chameleon-lizard-multicolor-closeup-macro-pattern-black-2880x1800-4552.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    color: white;
+  }
+  
+  .contact-form h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    background-color: #2d75c7;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ffd700;
+    color: #fff;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  .company-info p {
+    margin: 5px 0;
+  }
+  
+  
+/* Include the same CSS content as in the previous examples */
+
+/* Advanced About Page Styles */
+
+.about-us {
+    text-align: center;
+    padding: 80px 20px;
+    background-color:#f4f4f4;
+    background-image: url('images/DF3FAB0D-859B-4A3D-B315-B57E04E69FE4.jpeg');
+    background-size: cover;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+
+  }
+  
+  .about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  .company-info p {
+    margin: 5px 0;
+  }
+
+  /* Add this to your styles.css file or inline style tag in the head */
+
+.logo svg {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintains aspect ratio */
+    fill: #ff0000; /* Change the color to your desired color */
+  }
+
+
+  /* Add this to your styles.css file or inline style tag in the head */
+
+/* Cart Icon Styles */
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cart-icon i {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+  
+  .cart-quantity {
+    background-color: #ffd700;
+    color: #333;
+    padding: 5px 8px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  /* Add this to your styles.css file or inline style tag in the head */
+
+/* Cart Styles */
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .remove-item {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+  /* Add this to your styles.css file or inline style tag in the head */
+
+/* Product List Styles */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  width: 300px;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.product label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.product input {
+  width: 50px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.product button {
+  background-color: #2d75c7;
+  color: #333;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product button:hover {
+  background-color: #333;
+  color: #ffd700;
+}
+  
+body.product {
+    background-image: url('images/chem.webp');
+}
